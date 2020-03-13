@@ -1,11 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { HeaderComponent } from './header/header.component';
+
 import { HomeComponent } from './home/home.component';
 import { MissaoComponent } from './sobrenos/missao/missao.component';
 import { OrgaosSociaisComponent } from './sobrenos/orgaos-sociais/orgaos-sociais.component';
@@ -23,34 +19,34 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { BlogueComponent } from './blogue/blogue.component';
 import { OnlineStoreComponent } from './online-store/online-store.component';
 
+const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent },
+  { path: 'missao', component: MissaoComponent },
+  { path: 'orgaos-sociais', component: OrgaosSociaisComponent },
+  { path: 'perguntas-frequentes', component: PerguntasFrequentesComponent },
+  { path: 'corpos-sociais', component: CorposSociaisComponent },
+  { path: 'donativos', component: DonativosComponent },
+  { path: 'seja-socio', component: SejaSocioComponent },
+  { path: 'seja-voluntario', component: SejaVoluntarioComponent },
+  { path: 'gatos-rua', component: GatosRuaComponent },
+  { path: 'adopcoes', component: AdopcoesComponent },
+  { path: 'encontrei-gato', component: EncontreiGatoComponent },
+  { path: 'perdi-gato', component: PerdiGatoComponent },
+  { path: 'gato-ferido', component: GatoFeridoComponent },
+  { path: 'contactos', component: ContactosComponent },
+  { path: 'blogue', component: BlogueComponent },
+  { path: 'online-store', component: OnlineStoreComponent },
+
+
+];
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    MissaoComponent,
-    OrgaosSociaisComponent,
-    PerguntasFrequentesComponent,
-    CorposSociaisComponent,
-    DonativosComponent,
-    SejaSocioComponent,
-    SejaVoluntarioComponent,
-    GatosRuaComponent,
-    AdopcoesComponent,
-    EncontreiGatoComponent,
-    PerdiGatoComponent,
-    GatoFeridoComponent,
-    ContactosComponent,
-    BlogueComponent,
-    OnlineStoreComponent
-  ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule,
-    AppRoutingModule
+    // RouterModule.forRoot(appRoutes, {useHash: true})
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  exports: [RouterModule]})
+export class AppRoutingModule {
+
+}
