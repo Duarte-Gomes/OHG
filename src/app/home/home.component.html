@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -27,7 +27,36 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<ngb-carousel >
+	<ng-template ngbSlide>
+	  <div class="picsum-img-wrapper">
+		<img src="../../assets/img01.jpg" alt="Random first slide" class="w-100">
+	  </div>
+	  <div class="carousel-caption">
+		<h3>10 seconds between slides...</h3>
+		<p>This carousel uses customized default values.</p>
+	  </div>
+	</ng-template>
+	<ng-template ngbSlide>
+	  <div class="picsum-img-wrapper">
+		<img src="../../assets/img02.jpg" class="w-100">
+	  </div>
+	  <div class="carousel-caption">
+		<h3>No mouse events...</h3>
+		<p>This carousel doesn't pause or resume on mouse events</p>
+	  </div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+		  <img src="../../assets/img03.jpg" class="w-100" alt="...">
+		</div>
+		<div class="carousel-caption">
+		  <h3>No mouse events...</h3>
+		  <p>This carousel doesn't pause or resume on mouse events</p>
+		</div>
+	  </ng-template>
+</ngb-carousel>
 <div class="row">
     <div class="col-8">
         <h1>Nosso Blogue</h1>

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,28 +26,29 @@ import { OnlineStoreComponent } from './online-store/online-store.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    MissaoComponent,
-    OrgaosSociaisComponent,
-    PerguntasFrequentesComponent,
-    CorposSociaisComponent,
-    DonativosComponent,
-    SejaSocioComponent,
-    SejaVoluntarioComponent,
-    GatosRuaComponent,
-    AdopcoesComponent,
-    EncontreiGatoComponent,
-    PerdiGatoComponent,
-    GatoFeridoComponent,
-    ContactosComponent,
-    BlogueComponent,
-    OnlineStoreComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
+	  AppComponent,
+	  HeaderComponent,
+	  HomeComponent,
+	  MissaoComponent,
+	  OrgaosSociaisComponent,
+	  PerguntasFrequentesComponent,
+	  CorposSociaisComponent,
+	  DonativosComponent,
+	  SejaSocioComponent,
+	  SejaVoluntarioComponent,
+	  GatosRuaComponent,
+	  AdopcoesComponent,
+	  EncontreiGatoComponent,
+	  PerdiGatoComponent,
+	  GatoFeridoComponent,
+	  ContactosComponent,
+	  BlogueComponent,
+	  OnlineStoreComponent
+	],
+	imports: [
+	NgbModule,
+	BrowserModule,
+	FormsModule,
     RouterModule,
     AppRoutingModule
   ],
