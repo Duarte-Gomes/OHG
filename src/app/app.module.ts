@@ -24,6 +24,8 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { BlogueComponent } from './blogue/blogue.component';
 import { OnlineStoreComponent } from './online-store/online-store.component';
 
+import { BlogItemComponent } from './components/blog-item/blog-item.component';
+
 @NgModule({
   declarations: [
 	  AppComponent,
@@ -43,7 +45,8 @@ import { OnlineStoreComponent } from './online-store/online-store.component';
 	  GatoFeridoComponent,
 	  ContactosComponent,
 	  BlogueComponent,
-	  OnlineStoreComponent
+	  OnlineStoreComponent,
+	  BlogItemComponent
 	],
 	imports: [
 	NgbModule,

@@ -1,61 +1,100 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand" routerLink="/"><img src="../../assets/logo_ohg.webp" width="250"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+	<div class="container">
+		<a class="navbar-brand" routerLink="/"><img src="../../assets/logo_ohg.webp" width="200"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		<li class="nav-item">
-			<a class="nav-link" routerLink="/">Início</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Sobre Nós
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" routerLink="missao">Missão</a>
-			<a class="dropdown-item" routerLink="orgaos-sociais">Orgãos Sociais</a>
-			<a class="dropdown-item" routerLink="perguntas-frequentes">Perguntas Frequentes</a>
-			<a class="dropdown-item" routerLink="corpos-sociais">Novos Corpos Sociais</a>
-			</div>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Como ajudar
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-			<a class="dropdown-item" routerLink="donativos">Donativos</a>
-			<a class="dropdown-item" routerLink="seja-socio">Seja Sócio</a>
-			<a class="dropdown-item" routerLink="seja-voluntario">Seja Voluntário</a>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="gatos-rua">Gatos de Rua</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="adopcoes">Adopções</a>
-		</li>
-		<li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			SOS
-			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-			<a class="dropdown-item" routerLink="encontrei-gato">Encontrei um gato</a>
-			<a class="dropdown-item" routerLink="perdi-gato">Perdi o meu gato!</a>
-			<a class="dropdown-item" routerLink="gato-ferido">Gato Ferido</a>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="contactos">Contactos</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="blogue">Blogue</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" routerLink="online-store">Online Store</a>
-		</li>
-		</ul>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/">Início</a>
+			</li>
+			<li class="nav-item">
+				<div class="col">
+				<div ngbDropdown class="d-inline-block">
+					<button class="btn" id="dropdownBasic1" ngbDropdownToggle>Sobre Nós</button>
+					<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button ngbDropdownItem routerLink="missao">Missão</button>
+					<button ngbDropdownItem routerLink="orgaos-sociais">Orgãos Sociais</button>
+					<button ngbDropdownItem routerLink="perguntas-frequentes">Perguntas Frequentes</button>
+					<button ngbDropdownItem routerLink="corpos-sociais">Novos Corpos Sociais</button>
+					</div>
+				</div>
+				</div>
+			</li>
+			<!-- <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Sobre Nós
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" routerLink="missao">Missão</a>
+				<a class="dropdown-item" routerLink="orgaos-sociais">Orgãos Sociais</a>
+				<a class="dropdown-item" routerLink="perguntas-frequentes">Perguntas Frequentes</a>
+				<a class="dropdown-item" routerLink="corpos-sociais">Novos Corpos Sociais</a>
+				</div>
+			</li> -->
+			<li class="nav-item">
+				<div class="col">
+				<div ngbDropdown class="d-inline-block">
+					<button class="btn" id="dropdownBasic1" ngbDropdownToggle>Como ajudar</button>
+					<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button ngbDropdownItem routerLink="donativos">Donativos</button>
+					<button ngbDropdownItem routerLink="seja-socio">Seja Sócio</button>
+					<button ngbDropdownItem routerLink="seja-voluntario">Seja Voluntário</button>
+					</div>
+				</div>
+				</div>
+			</li>
+			<!-- <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Como ajudar
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+				<a class="dropdown-item" routerLink="donativos">Donativos</a>
+				<a class="dropdown-item" routerLink="seja-socio">Seja Sócio</a>
+				<a class="dropdown-item" routerLink="seja-voluntario">Seja Voluntário</a>
+				</div>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" routerLink="gatos-rua">Gatos de Rua</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink="adopcoes">Adopções</a>
+			</li>
+			<li class="nav-item">
+				<div class="col">
+				<div ngbDropdown class="d-inline-block">
+					<button class="btn" id="dropdownBasic1" ngbDropdownToggle>SOS</button>
+					<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+					<button ngbDropdownItem routerLink="encontrei-gato">Encontrei um gato</button>
+					<button ngbDropdownItem routerLink="perdi-gato">Perdi o meu gato!</button>
+					<button ngbDropdownItem routerLink="gato-ferido">Gato Ferido</button>
+					</div>
+				</div>
+				</div>
+			</li>
+			<!-- <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				SOS
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+				<a class="dropdown-item" routerLink="encontrei-gato">Encontrei um gato</a>
+				<a class="dropdown-item" routerLink="perdi-gato">Perdi o meu gato!</a>
+				<a class="dropdown-item" routerLink="gato-ferido">Gato Ferido</a>
+				</div>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" routerLink="contactos">Contactos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink="blogue">Blogue</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" routerLink="online-store">Online Store</a>
+			</li>
+			</ul>
+		</div>
 	</div>
 </nav>
